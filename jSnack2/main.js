@@ -31,5 +31,6 @@ const newArray = names.filter((element, index) => {
 
 
 });
-console.log(newArray);
+// console.log(`the old array is ${names`);
+// console.log(`the new array is ${newArray}`);
 });
