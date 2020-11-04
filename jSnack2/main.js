@@ -23,12 +23,7 @@ if (firstNumber < secondNumber) {
 console.log('the minor is: ' + minorValue);
 console.log('the max is: ' + maxValue);
 const newArray = names.filter((element, index) => {
-    names.forEach((element, i) => {
-        if (i = minorValue) {
-
-        }
-
-    });
+    return minorValue <= index && maxValue >= index;
 
 
     // console.log(newArray);
