@@ -32,14 +32,16 @@ $(document).ready(function() {
 
     const newStudents = students.map((element, index) => {
         console.log(element);
-        let copy = element;
-
+        let copy = {
+            ...element,
+            position : stringGen(1)
+        };
         return copy;
     });
-    newStudents.forEach((thisStudent) => {
-       thisStudent.position = stringGen(1);
-
-   });
+   //  newStudents.forEach((thisStudent) => {
+   //     thisStudent.position = stringGen(1);
+   //
+   // });
    console.log(newStudents);
    console.log(students);
 
