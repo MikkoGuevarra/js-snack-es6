@@ -4,55 +4,37 @@ $(document).ready(function() {
 //creo oggetti bici
 let bike = [
     {
-        'nome' : 'Shava',
-        'peso' : 7
+        nome : 'Shava',
+        peso : 7
     },
     {
-        'nome' : 'Atala',
-        'peso' : 3
+        nome : 'Atala',
+        peso : 3
     },
     {
-        'nome' : 'Scott',
-        'peso' : 6
+        nome : 'Scott',
+        peso : 6
     }
 ];
 console.log(bike);
 
-// //creo variabile per il peso corrente che sto scorrendo
-let currentWeight;
-//
-// //creo variabile per salvare il peso minore
-let minor = bike[0]['peso'];
-let minorName =  bike[0]['nome'];
-//
-// //cre ciclo per scorrere ogni oggetto dell'array
-// for (var i = 0; i < bike.length; i++) {
-//     thisBike = bike[i]
-//     console.log(thisBike);
-//     var currentWeight = thisBike['peso'];
-//     var currentName = thisBike['nome'];
-//
-//     if (currentWeight < minor) {
-//         minor = currentWeight;
-//         minorName = currentName;
-//     }
-// }
 
+//inizializzo due variabili con peso minore e relativo nome
+let minorWeight = bike[0].peso;
+let minorName = bike[0].nome;
 
+//ciclo array per ogni singlo oggetto
 bike.forEach((thisBike) => {
     console.log(thisBike);
-    let currentWeight = thisBike.peso;
-    let currentName = thisBike.nome;
-    if (currentWeight < minor) {
-        minor = currentWeight;
-        minorName = currentName
+    const {nome, peso} = thisBike;
+    console.log(nome, peso);
+    if (peso  < minorWeight) {
+        minorWeight = peso;
+        minorName = nome;
+        console.log(peso);
     }
 });
 
-console.log(`the winner is ${minorName} con peso ${minor}`);
+console.log(`${minorName} ha un peso di ${minorWeight}kg ed è quella minore tra tutte`);
 
-
-// console.log('the winner  is '+ minorName + ' con ' + minor + ' kg' );
-// $('#best-bike').text('the winner  is '+ minorName + ' con ' + minor + ' kg')
-//
 });

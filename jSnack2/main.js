@@ -2,15 +2,15 @@ $(document).ready(function() {
 // JSnack2: Creare un array di nomi e chiedere all'utente due numeri. Creare un nuovo array con i valori che si trovano in una posizione compresa tra i due numeri inseriti dall'utente.
 
 //creo array di nomi
-var names = ['pippo', 'pluto', 'paperino', 'minnie', 'mickey', 'theo', 'franck', 'giggio', 'mario', 'carlo'];
-var firstNumber = parseInt(prompt('Inserisci il primo numero'));
+const names = ['pippo', 'pluto', 'paperino', 'minnie', 'mickey', 'theo', 'franck', 'giggio', 'mario', 'carlo'];
+const firstNumber = parseInt(prompt('Inserisci il primo numero'));
 console.log(firstNumber);
 
-var secondNumber = parseInt(prompt('Inserisci il secondo numero'));
+const secondNumber = parseInt(prompt('Inserisci il secondo numero'));
 console.log(secondNumber);
 
-var minorValue;
-var maxValue;
+let minorValue;
+let maxValue;
 
 if (firstNumber<secondNumber) {
     minorValue = firstNumber;
@@ -24,10 +24,14 @@ console.log('il min è ' + minorValue + ' ed il max è ' + maxValue );
 // creo nuovo array che si trovano in una posizione  compresa tra i due numeri inseriti dall'utente.
 
 console.log(names);
-var newArray = [];
-for (var i = (minorValue-1); i <= (maxValue-1); i++) {
-    newArray.push(names[i]);
-
-}
+// var newArray = [];
+// for (var i = (minorValue-1); i <= (maxValue-1); i++) {
+//     newArray.push(names[i]);
+//
+// }
+// console.log(newArray);
+let firstName = names[names.minorValue];
+console.log(firstName);
+const newArray = [...names]
 console.log(newArray);
 });
