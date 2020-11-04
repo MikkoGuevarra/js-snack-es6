@@ -12,26 +12,29 @@ console.log(secondNumber);
 let minorValue;
 let maxValue;
 
-if (firstNumber<secondNumber) {
+if (firstNumber < secondNumber) {
     minorValue = firstNumber;
     maxValue = secondNumber;
-} else if (firstNumber > secondNumber) {
+} else if ( firstNumber > secondNumber) {
     minorValue = secondNumber;
     maxValue = firstNumber;
+
 }
+console.log('the minor is: ' + minorValue);
+console.log('the max is: ' + maxValue);
+const newArray = names.filter((element, index) => {
+    names.forEach((element, i) => {
+        if (i = minorValue) {
 
-console.log('il min è ' + minorValue + ' ed il max è ' + maxValue );
-// creo nuovo array che si trovano in una posizione  compresa tra i due numeri inseriti dall'utente.
+        }
 
-console.log(names);
-// var newArray = [];
-// for (var i = (minorValue-1); i <= (maxValue-1); i++) {
-//     newArray.push(names[i]);
-//
-// }
-// console.log(newArray);
-let firstName = names[names.minorValue];
-console.log(firstName);
-const newArray = [...names]
+    });
+
+
+    // console.log(newArray);
+
+
+
+});
 console.log(newArray);
 });
